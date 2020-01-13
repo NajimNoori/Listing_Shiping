@@ -1,0 +1,42 @@
+﻿@model Listing_Shiping.Models.Users
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>User</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNUmber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNUmber)
+        </dd>
+    </dl>
+
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index", "Users", new { area = "" }, null)
+    @Html.ActionLink("Edit", "Edit", "Users", new { id = Model.Id }, null)
+</p>
