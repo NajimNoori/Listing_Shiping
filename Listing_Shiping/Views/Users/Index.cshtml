@@ -1,0 +1,45 @@
+﻿@model IEnumerable<Listing_Shiping.Models.Users>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<p>
+    @Html.ActionLink("Create New User", "Create", "Users")
+</p>
+
+<table style="border:1px solid blue; width: 100%;">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNUmber)
+        </th>
+        <th>
+            Actions
+        </th>
+    </tr>
+    @foreach (var val in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => val.FirstName)</td>
+            <td>@Html.DisplayFor(modelItem => val.LastName)</td>
+            <td>@Html.DisplayFor(modelItem => val.EmailAddress)</td>
+            <td>@Html.DisplayFor(modelItem => val.PhoneNUmber)</td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", "Users", new { id = val.Id }, null)
+                @Html.ActionLink("Details", "Details", "Users", new { id = val.Id }, null)
+                @Html.ActionLink("Delete", "Delete", "Users", new { id = val.Id }, null)
+            </td>
+        </tr>
+    }
+</table>
