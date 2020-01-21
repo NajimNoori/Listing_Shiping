@@ -165,11 +165,6 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Connected Services\eBayServiceReference\Reference.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Compile>
     <Compile Include="Controllers\eBayController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -177,54 +172,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\eBay.cs" />
     <Compile Include="Models\Users.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web References\com.ebay.developer\Reference.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.addCreditResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.addUsageResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.getBillingRecordsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.getBillingStatementsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.getCreditsResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.OpeneBayAddCreditResponseType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.OpeneBayAddUsageResponseType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.OpeneBayGetBillingRecordsResponseType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.OpeneBayGetBillingStatementsResponseType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.OpeneBayGetCreditsResponseType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.OpeneBaySetBillingStartDateResponseType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <Content Include="Connected Services\eBayServiceReference\Listing_Shiping.eBayServiceReference.setBillingStartDateResponse.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
-    <None Include="Connected Services\eBayServiceReference\OpeneBayApplicationIntegrationService.wsdl" />
-    <None Include="Connected Services\eBayServiceReference\configuration91.svcinfo" />
-    <None Include="Connected Services\eBayServiceReference\configuration.svcinfo" />
-    <None Include="Connected Services\eBayServiceReference\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -472,6 +426,168 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Shared\_Layout - Copy.cshtml" />
+    <Content Include="Web References\com.ebay.developer\AddDisputeResponseResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddDisputeResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddFixedPriceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddItemFromSellingManagerTemplateResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddItemsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddMemberMessageAAQToPartnerResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddMemberMessageRTQResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddMemberMessagesAAQToBidderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddOrderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddSecondChanceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddSellingManagerInventoryFolderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddSellingManagerProductResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddSellingManagerTemplateResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddToItemDescriptionResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddToWatchListResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\AddTransactionConfirmationItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\CompleteSaleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ConfirmIdentityResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DeleteMyMessagesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DeleteSellingManagerInventoryFolderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DeleteSellingManagerItemAutomationRuleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DeleteSellingManagerProductResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DeleteSellingManagerTemplateAutomationRuleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DeleteSellingManagerTemplateResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\DisableUnpaidItemAssistanceResponseType.datasource" />
+    <None Include="Web References\com.ebay.developer\ebaySvc.wsdl" />
+    <Content Include="Web References\com.ebay.developer\EndFixedPriceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\EndItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\EndItemsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ExtendSiteHostedPicturesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\FetchTokenResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetAccountResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetAdFormatLeadsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetAllBiddersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetApiAccessRulesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetAttributesCSResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetAttributesXSLResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetBestOffersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetBidderListResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCategoriesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCategory2CSResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCategoryFeaturesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCategoryMappingsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCategorySpecificsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetChallengeTokenResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCharitiesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetClientAlertsAuthTokenResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetContextualKeywordsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetCrossPromotionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetDescriptionTemplatesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetDisputeResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GeteBayDetailsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GeteBayOfficialTimeResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetFeedbackResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetHighBiddersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetItemRecommendationsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetItemsAwaitingFeedbackResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetItemShippingResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetItemTransactionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetMemberMessagesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetMessagePreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetMyeBayBuyingResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetMyeBayRemindersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetMyeBaySellingResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetMyMessagesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetNotificationPreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetNotificationsUsageResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetOrdersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetOrderTransactionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetPictureManagerDetailsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetPictureManagerOptionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetProductFamilyMembersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetProductFinderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetProductFinderXSLResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetProductSearchPageResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetProductSearchResultsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetProductSellingPagesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetPromotionalSaleDetailsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetPromotionRulesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellerDashboardResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellerEventsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellerListResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellerPaymentsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellerTransactionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerAlertsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerEmailLogResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerInventoryFolderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerInventoryResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerItemAutomationRuleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerSaleRecordResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerSoldListingsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerTemplateAutomationRuleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSellingManagerTemplatesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSessionIDResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetShippingDiscountProfilesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetStoreCategoryUpdateStatusResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetStoreCustomPageResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetStoreOptionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetStorePreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetStoreResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetSuggestedCategoriesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetTaxTableResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetTokenStatusResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetUserContactDetailsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetUserDisputesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetUserPreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetUserResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetVeROReasonCodeDetailsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetVeROReportStatusResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetWantItNowPostResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\GetWantItNowSearchResultsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\IssueRefundResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\LeaveFeedbackResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\MoveSellingManagerInventoryFolderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\PlaceOfferResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\Reference.map" />
+    <Content Include="Web References\com.ebay.developer\RelistFixedPriceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\RelistItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\RemoveFromWatchListResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\RespondToBestOfferResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\RespondToFeedbackResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\RespondToWantItNowPostResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseCheckoutStatusResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseFixedPriceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseInventoryStatusResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseMyMessagesFoldersResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseMyMessagesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseSellingManagerInventoryFolderResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseSellingManagerProductResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseSellingManagerSaleRecordResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ReviseSellingManagerTemplateResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\RevokeTokenResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SaveItemToSellingManagerTemplateResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SellerReverseDisputeResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SendInvoiceResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetMessagePreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetNotificationPreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetPictureManagerDetailsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetPromotionalSaleListingsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetPromotionalSaleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetSellingManagerFeedbackOptionsResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetSellingManagerItemAutomationRuleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetSellingManagerTemplateAutomationRuleResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetShippingDiscountProfilesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetStoreCategoriesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetStoreCustomPageResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetStorePreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetStoreResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetTaxTableResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetUserNotesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\SetUserPreferencesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\UploadSiteHostedPicturesResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ValidateChallengeInputResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\ValidateTestUserRegistrationResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\VerifyAddFixedPriceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\VerifyAddItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\VerifyAddSecondChanceItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\VerifyRelistItemResponseType.datasource" />
+    <Content Include="Web References\com.ebay.developer\VeROReportItemsResponseType.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -489,9 +605,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <WCFMetadataStorage Include="Connected Services\eBayServiceReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
